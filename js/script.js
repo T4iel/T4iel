@@ -42,7 +42,7 @@ function loadSharedLayout() {
         footerPlaceholder.innerHTML = `
         <footer class="bg-dark text-white-50 text-center py-4 mt-5">
             <div class="container">
-                <p class="mb-1">&copy; 2026 T4iel Lab | School of Engineering and Applied Science | Ahmedabad University</p>
+                <p class="mb-1">&copy; 2026 T4iel Lab | Ahmedabad University</p>
                 <p class="small text-muted mb-0">Funded by Ahmedabad University Research Grants</p>
             </div>
         </footer>
