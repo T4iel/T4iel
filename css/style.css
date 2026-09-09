@@ -40,30 +40,16 @@ h1, h2, h3, .font-serif {
     color: white;
 }
 
-/* Custom Navigation Link Underlines */
+/* Custom Navigation Links (Clean text without underlines) */
 .nav-link-custom {
     color: #475569;
     font-weight: 500;
-    position: relative;
     padding: 6px 0;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
+    text-decoration: none !important;
 }
 .nav-link-custom:hover {
     color: var(--primary);
-}
-.nav-link-custom::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary);
-    transition: all 0.2s ease;
-}
-.nav-link-custom:hover::after,
-.nav-link-custom.active::after {
-    width: 100%;
 }
 .nav-link-custom.active {
     color: var(--primary) !important;
@@ -153,4 +139,52 @@ h1, h2, h3, .font-serif {
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(var(--primary-rgb), 0.15);
+    flex-shrink: 0;
+}
+
+.member-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.member-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+.hover-maroon {
+    transition: color 0.2s ease;
+}
+.hover-maroon:hover {
+    color: var(--primary) !important;
+}
+
+.bg-maroon-subtle {
+    background-color: rgba(107, 46, 46, 0.08) !important;
+    color: var(--primary) !important;
+    border: 1px solid rgba(107, 46, 46, 0.15);
+}
+
+.fs-7 {
+    font-size: 0.8rem;
+}
+
+.objective-card {
+    transition: all 0.25 ease;
+    border-radius: 12px;
+}
+.objective-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(107, 46, 46, 0.08) !important;
+}
+
+.badge-number {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(107, 46, 46, 0.08);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

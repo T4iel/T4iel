@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T4iel Lab | Simple Student Study Planner (SIJMS)</title>
+    <title>T4iel Lab | Ahmedabad University</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <script src="js/course-graph.js" defer></script>
 </head>
 
 <body>
@@ -19,43 +20,32 @@
         <!-- Welcome Hero Section -->
         <section class="hero-gradient text-white text-center py-5">
             <div class="container py-4">
-                <h1 class="display-4 fw-bold mb-3">T4IEL Lab | SIJMS</h1>
-                <p class="lead opacity-75 max-width-700 mx-auto">Studen Interdisplinary Journey Management System</p>
+                <span class="badge bg-white text-maroon px-3 py-2 fs-7 text-uppercase fw-semibold mb-3">Ahmedabad University Virtual Lab</span>
+                <h1 class="display-4 fw-bold mb-3">T4IEL Lab</h1>
+                <p class="lead opacity-90 max-width-700 mx-auto">
+                    Technology of, for, in, and across Interdisciplinary Education Laboratory
+                </p>
             </div>
         </section>
 
-        <!-- Project Summary Section -->
+        <!-- Project Overview Section -->
         <section class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h2 class="text-maroon fw-bold mb-4">Project Overview</h2>
-                    <p class="lead text-secondary mb-4">
-                        The importance of designing and developing the SIJMS lies in its potential to explore and
-                        support — how IE, especially
-                        from students’ individual journey navigations, is conceptualized, managed, and experienced at
-                        Ahmedabad University and
-                        in other higher education institutions worldwide, where IE is already introduced or being
-                        planned. Many higher education
-                        institutions are trying to reshape their IE-based curricula to be more information-driven,
-                        evidence-based, timely, and
-                        focused. However, in the context of IE-based learning pathways, students and their parents face
-                        difficulties in deciding
-                        the educational pathway navigation to achieve their end-of-graduation goals.
-                    </p>
+                    <div class="text-center mb-4">
+                        <h2 class="text-maroon fw-bold mb-2">Project Overview</h2>
+                        <p class="text-muted">Empowering Interdisciplinary Education (IE) Pathways through Smart Technology</p>
+                    </div>
 
-                    <!-- Simple Core Objective Box -->
-                    <!-- <div class="objective-box p-4 my-4 shadow-sm rounded-end bg-white">
-                        <h4 class="text-maroon fw-bold text-uppercase fs-7 mb-2">Our Goal</h4>
-                        <li>
-                            <p class="fst-italic text-dark mb-0">
-                                OBJ1: Understand the complexities, challenges, and decision-making processes of
-                                students’ IE journeys concerning
-                                personalized end-of-graduation goals by involving students, teachers, curriculum
-                                designers, admissions officers, CDC
-                                officers, and institutional leaders
-                            </p>
-                        </li>
-                    </div> -->
+                    <div class="card border-0 shadow-sm p-4 p-md-5 bg-white rounded-4 border-start border-4 border-maroon mb-4">
+                        <h3 class="h5 text-dark fw-bold mb-3">Understanding the Student Interdisciplinary Journey Management System (SIJMS)</h3>
+                        <p class="text-secondary leading-relaxed mb-3">
+                            The <strong>Student Interdisciplinary Journey Management System (SIJMS)</strong> is designed to support and model how interdisciplinary education pathways are conceptualized, managed, and experienced by students at Ahmedabad University and worldwide.
+                        </p>
+                        <p class="text-secondary leading-relaxed mb-0">
+                            While higher education institutions are evolving toward information-driven and evidence-based curricula, students often face challenges navigating complex course requirements to reach their graduation goals. SIJMS bridges this gap by providing data-driven recommendations, clear course prerequisites, and transparent academic mapping.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -65,11 +55,9 @@
             <div class="container">
                 <div class="row justify-content-center text-center mb-4">
                     <div class="col-lg-8">
-                        <h2 class="text-maroon fw-bold mb-2">Interactive Course Connections</h2>
+                        <h2 class="text-maroon fw-bold mb-2">Interactive Course Connections Map</h2>
                         <p class="text-secondary">
-                            Below is an easy visual map of our courses. Hover or click on a course bubble (node) to see
-                            how it connects
-                            to its requirements and what skills you will learn from it.
+                            Explore our interactive curriculum network below. Hover over or click any course node to view prerequisites, credits, and skills gained.
                         </p>
                     </div>
                 </div>
@@ -83,10 +71,8 @@
 
                         <!-- Sidebar/Detail Card -->
                         <div class="card border-0 shadow-sm p-4 bg-light" id="graph-details-panel">
-                            <h5 class="text-maroon fw-bold mb-2" id="panel-course-title">Hover or Click a Course Circle
-                            </h5>
-                            <p class="text-muted mb-0" id="panel-course-desc">Hover over any course above to see the
-                                class description and prerequisites instantly.</p>
+                            <h5 class="text-maroon fw-bold mb-2" id="panel-course-title">Hover or Click a Course Circle</h5>
+                            <p class="text-muted mb-0" id="panel-course-desc">Hover over any course above to see the class description and prerequisites instantly.</p>
                             <div class="d-flex gap-4 mt-3 pt-2 border-top border-secondary-subtle"
                                 id="panel-course-meta" style="display: none !important;">
                                 <span class="small text-secondary">Credits: <strong class="text-dark"
@@ -100,101 +86,82 @@
             </div>
         </section>
 
-        <!-- 4 Main How-We-Help Pillars -->
+        <!-- Core Objectives Grid -->
         <section class="container py-5">
-            <h2 class="text-maroon fw-bold mb-4">Objectives</h2>
+            <div class="text-center mb-5">
+                <h2 class="text-maroon fw-bold mb-2">Core Objectives</h2>
+                <p class="text-secondary">Key pillars guiding the design, development, and deployment of SIJMS</p>
+            </div>
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 50px; height: 50px;">
-                            <span class="text-maroon fw-bold fs-5">01</span>
+                    <div class="card h-100 border-0 shadow-sm p-4 objective-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="badge-number">01</div>
+                            <h3 class="h6 fw-bold mb-0 text-dark">Student Journey Mapping</h3>
                         </div>
-                        <p class="small text-secondary mb-0">Understand the complexities, challenges, and
-                            decision-making processes of
-                            students’ IE journeys concerning
-                            personalized end-of-graduation goals by involving students, teachers, curriculum
-                            designers, admissions officers, CDC
-                            officers, and institutional leaders</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 50px; height: 50px;">
-                            <span class="text-maroon fw-bold fs-5">02</span>
-                        </div>
-                        <!-- <h4 class="h5 fw-bold mb-2">Skill Checks</h4> -->
-                        <p class="small text-secondary mb-0">Systematically extract, document, and specify the
-                            requirements as Software
-                            Requirements
-                            Specification (SRS) of the envisioned system through cross-disciplinary participatory
-                            approaches,
-                            which include workshops and focused groups comprising students, teachers, and other
-                            educational
-                            stakeholders.</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 50px; height: 50px;">
-                            <span class="text-maroon fw-bold fs-5">03</span>
-                        </div>
-                        <!-- <h4 class="h5 fw-bold mb-2">Study Pathways</h4> -->
-                        <p class="small text-secondary mb-0">Co-design SIJMS through iterative consultations with
-                            students, teachers, and
-                            other stakeholders, ensuring it
-                            successfully addresses their needs and requirements mentioned in the SRS.</p>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 50px; height: 50px;">
-                            <span class="text-maroon fw-bold fs-5">04</span>
-                        </div>
-                        <!-- <h4 class="h5 fw-bold mb-2">Advisor Tools</h4> -->
-                        <p class="small text-secondary mb-0">Develop a working system prototype, validate each module
-                            with relevant
-                            stakeholders,
-                            and
-                            iteratively refine SIJMS by following a Design-Based Research (DBR) methodology before
-                            finalizing a minimum viable state-of-the-art product.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 50px; height: 50px;">
-                            <span class="text-maroon fw-bold fs-5">05</span>
-                        </div>
-                        <!-- <h4 class="h5 fw-bold mb-2">Advisor Tools</h4> -->
-                        <p class="small text-secondary mb-0">Explore potential scalability and integration strategies
-                            for SIJMS into existing
-                            EdTech
-                            tools and systems within
-                            the host institution (e.g., Learning Management Systems (LMS) and Ahmedabad University’s
-                            AURIS portal), ensuring
-                            long-term sustainability, reusability, and broader adoption to other IE institutions.
+                        <p class="small text-secondary mb-0">
+                            Analyze the complexities, decision-making processes, and challenges of students' interdisciplinary learning pathways toward personalized graduation goals.
                         </p>
                     </div>
                 </div>
+
                 <div class="col">
-                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 50px; height: 50px;">
-                            <span class="text-maroon fw-bold fs-5">06</span>
+                    <div class="card h-100 border-0 shadow-sm p-4 objective-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="badge-number">02</div>
+                            <h3 class="h6 fw-bold mb-0 text-dark">SRS & Stakeholder Co-Design</h3>
                         </div>
-                        <!-- <h4 class="h5 fw-bold mb-2">Advisor Tools</h4> -->
-                        <p class="small text-secondary mb-0">Address a few pressing open research questions of AI in
-                            Education (AIED) and TEL&T
-                            from a system design and
-                            development viewpoint across different DBR phases.
+                        <p class="small text-secondary mb-0">
+                            Extract, document, and specify system requirements (SRS) through cross-disciplinary workshops involving students, faculty, CDC, and admissions officers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm p-4 objective-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="badge-number">03</div>
+                            <h3 class="h6 fw-bold mb-0 text-dark">System Co-Design</h3>
+                        </div>
+                        <p class="small text-secondary mb-0">
+                            Co-design the SIJMS platform through iterative consultations to ensure it effectively resolves identified academic and advising needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm p-4 objective-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="badge-number">04</div>
+                            <h3 class="h6 fw-bold mb-0 text-dark">Prototype & DBR Refinement</h3>
+                        </div>
+                        <p class="small text-secondary mb-0">
+                            Develop working prototypes, validate modules with stakeholders, and refine SIJMS using Design-Based Research (DBR) methodology.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm p-4 objective-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="badge-number">05</div>
+                            <h3 class="h6 fw-bold mb-0 text-dark">EdTech Portal Integration</h3>
+                        </div>
+                        <p class="small text-secondary mb-0">
+                            Integrate SIJMS into LMS and Ahmedabad University's AURIS portal for long-term sustainability, reusability, and cross-institution adoption.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm p-4 objective-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="badge-number">06</div>
+                            <h3 class="h6 fw-bold mb-0 text-dark">AIED & TEL Research</h3>
+                        </div>
+                        <p class="small text-secondary mb-0">
+                            Address pressing open research questions in AI in Education (AIED) and Technology-Enhanced Learning (TEL&T) from a system design perspective.
                         </p>
                     </div>
                 </div>
@@ -202,12 +169,11 @@
         </section>
 
         <!-- Impact Section -->
-        <section class="container py-5 text-center bg-light rounded-4 my-5 p-5">
-            <h2 class="text-maroon fw-bold mb-3 d-inline-block">Why This Matters</h2>
+        <section class="container py-5 text-center bg-white border shadow-sm rounded-4 my-5 p-5">
+            <h2 class="text-maroon fw-bold mb-3">Why This Matters</h2>
             <p class="lead text-secondary max-width-800 mx-auto mb-0">
-                The SIJMS portal brings students, classes, and graduation goals into one easy-to-use place.
-                By showing you exactly what is required and what skills you get, we make studying and picking classes
-                worry-free, transparent, and simple for everyone.
+                The SIJMS portal brings students, course pathways, and graduation goals into one easy-to-use platform.
+                By clarifying course connections and skills gained, we make academic planning transparent, worry-free, and empowering for everyone.
             </p>
         </section>
     </main>
