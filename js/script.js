@@ -14,19 +14,24 @@ function loadSharedLayout() {
     if (navbarPlaceholder) {
         navbarPlaceholder.innerHTML = `
         <header class="bg-white border-bottom sticky-top shadow-sm">
-            <nav class="navbar navbar-expand-lg navbar-light py-3">
-                <div class="container d-flex justify-content-between align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light py-2 py-lg-3">
+                <div class="container">
                     <a class="navbar-brand text-maroon fw-bold fs-3" href="index.html">
                         T4iel <span class="badge bg-maroon text-white fs-6">Lab</span>
                     </a>
-                    <ul class="navbar-nav flex-row gap-4">
-                        <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
-                        <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
-                        <li class="nav-item"><a href="members.html" class="nav-link-custom">Members</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
-                        <li class="nav-item"><a href="careers.html" class="nav-link-custom">Careers</a></li>
-                    </ul>
+                    <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarContent">
+                        <ul class="navbar-nav gap-2 gap-lg-4">
+                            <li class="nav-item"><a href="index.html" class="nav-link-custom">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link-custom">About</a></li>
+                            <li class="nav-item"><a href="resources.html" class="nav-link-custom">Resources</a></li>
+                            <li class="nav-item"><a href="members.html" class="nav-link-custom">Members</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link-custom">Contact</a></li>
+                            <li class="nav-item"><a href="careers.html" class="nav-link-custom">Careers</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>

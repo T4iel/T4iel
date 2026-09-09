@@ -188,3 +188,36 @@ h1, h2, h3, .font-serif {
     align-items: center;
     justify-content: center;
 }
+
+/* Responsive Media Queries & Mobile Optimizations */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #FAF9F6;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #E2E8F0;
+    }
+    .nav-link-custom {
+        display: block;
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+    .nav-link-custom:hover, .nav-link-custom.active {
+        background-color: rgba(107, 46, 46, 0.06);
+    }
+}
+
+@media (max-width: 768px) {
+    .interactive-graph-viewport {
+        height: 360px;
+    }
+}
+
+@media (max-width: 576px) {
+    .interactive-graph-viewport {
+        height: 300px;
+    }
+    .display-4 {
+        font-size: 2.2rem;
+    }
+}
